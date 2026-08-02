@@ -10,7 +10,7 @@ Patients follow very different paths: some stay stable, some need a transplant, 
 ![Liver Cirrhosis Progress](visuals/Cirrhosis-image-2.jpg) 
 
 ### Data:
-- Source: fedesoriano. (August 2021). Cirrhosis Prediction Dataset. Retrieved Jul. 12, 2026. [Dataset](https://www.kaggle.com/fedesoriano/cirrhosis-prediction-dataset).
+fedesoriano. (August 2021). Cirrhosis Prediction Dataset. Retrieved Jul. 12, 2026. [Dataset](https://www.kaggle.com/fedesoriano/cirrhosis-prediction-dataset).
 - **418 patient records** (312 from a randomized clinical trial + 106 additional patients followed for survival), each with **19 clinical/lab features** plus the target, `Status`.
 **Target Class:**
 - **C (Censored / Alive)** — the patient was still alive and stable when the study ended. To a doctor, this is the "safe" group — no urgent action needed.
