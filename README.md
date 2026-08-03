@@ -23,7 +23,8 @@ Since missing a patient who is likely to die is the most serious mistake, the mo
 ### Data:
 fedesoriano. (August 2021). Cirrhosis Prediction Dataset. Retrieved Jul. 12, 2026. [Dataset](https://www.kaggle.com/fedesoriano/cirrhosis-prediction-dataset).
 - **418 patient records** (312 from a randomized clinical trial + 106 additional patients followed for survival), each with **19 clinical/lab features** plus the target, `Status`.
-**Target Class:**
+
+**Target Classes:**
 - **C (Censored / Alive)** — the patient was still alive and stable when the study ended. To a doctor, this is the "safe" group — no urgent action needed.
 - **CL (Censored, Liver Transplant)** — the patient's disease got bad enough that they needed a liver transplant. This is serious, but the patient survived and got treated in time.
 - **D (Death)** — the patient died from the disease. This is the outcome doctors want to prevent the most.
