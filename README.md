@@ -72,6 +72,23 @@ fedesoriano. (August 2021). Cirrhosis Prediction Dataset. Retrieved Jul. 12, 202
 
 ---
 
+## Patient Segmentation via Clustering
+
+Patients were grouped into three clusters using **KMeans** based on clinical and lab features. The clusters were then compared with actual outcomes to check whether they also represent meaningful differences in patient risk.
+
+### Death Rate by Cluster
+
+![Death Rate by Cluster](visuals/Death-Rate-by-Cluster.png)
+
+> The `Decompensated / Advanced` cluster had the highest risk, with a death rate **47.9 percentage points above average**. `Severe Biochemical` was also above average at **+22.1 pp**, while `Mild / Low-Symptom` had the lowest risk at **-17.6 pp**.
+
+### What Distinguishes Each Cluster
+
+![Cluster Lab Profiles](visuals/Cluster-Lab-Profiles.png)
+
+> `Bilirubin` was the clearest feature separating the clusters. `Decompensated / Advanced` combined high `Bilirubin` with lower `Albumin` and `Platelets`, showing signs of weaker liver function. `Severe Biochemical` had the highest `Bilirubin` at **242% of typical**, but without the same drop in `Albumin` or `Platelets`, showing a different clinical pattern rather than simply a more severe version of the same group.
+
+---
 ## Model
 
 Three models were compared: **Logistic Regression**, **Random Forest**, and a **Neural Network**.
@@ -91,7 +108,8 @@ Both models had difficulty predicting the rare **CL (transplant)** class because
 - Use the model as a **decision support tool**, not a replacement for doctors.
 - Pay close attention to patients with high **Bilirubin**, long **Prothrombin** times, low **Platelets**, and older **Age**.
 - Continue using normal clinical procedures to identify transplant patients because the model does not predict the **CL** class well.
-- Use the patient clusters found during analysis to help decide how closely patients should be monitored.
+- Monitor the **Decompensated / Advanced** cluster most closely, followed by **Severe Biochemical**.
+- Use routine follow-up for most **Mild / Low-Symptom** patients.
 
 ---
 
