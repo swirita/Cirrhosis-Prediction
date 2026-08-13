@@ -97,9 +97,9 @@ The final model is a **Neural Network** because it detects more patients who eve
 
 ![Final Model Performance Comparison](visuals/RF-vs.-NN.png)
 
-> The Random Forest had slightly better overall performance (Macro F1: **0.55** vs. **0.52**), but the Neural Network detected more death cases (**73% recall** vs. **68%**). Since finding high-risk patients is more important than maximizing overall accuracy, the Neural Network was chosen.
+> The Random Forest had slightly better overall balanced performance (**Macro F1: 0.53 vs. 0.50**), but the Neural Network performed much better at detecting **death cases (80% recall vs. 63%)** and also detected more **CL/transplant cases (33% recall vs. 17%)**. Since identifying high-risk patients is the main priority, the **Neural Network was chosen**.
 
-Both models had difficulty predicting the rare **CL (transplant)** class because there were very few training examples.
+Both models still had difficulty predicting the rare **CL (transplant)** class because there were very few examples.
 
 ---
 
