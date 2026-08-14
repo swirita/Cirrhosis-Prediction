@@ -80,13 +80,13 @@ Patients were grouped into three clusters using **KMeans** based on clinical and
 
 ![Death Rate by Cluster](visuals/Death-Rate-by-Cluster.png)
 
-> The `Decompensated / Advanced` cluster had the highest risk, with a death rate **47.9 percentage points above average**. `Severe Biochemical` was also above average at **+22.1 pp**, while `Mild / Low-Symptom` had the lowest risk at **-17.6 pp**.
+> `Severe Biochemical` had the highest risk at **+33.2 pp above average**, followed by `Decompensated / Advanced` at **+26.4 pp**. `Mild / Low-Symptom` had the lowest risk at **-19.0 pp below average**.
 
 ### What Distinguishes Each Cluster
 
 ![Cluster Lab Profiles](visuals/Cluster-Lab-Profiles.png)
 
-> `Bilirubin` was the clearest feature separating the clusters. `Decompensated / Advanced` combined high `Bilirubin` with lower `Albumin` and `Platelets`, showing signs of weaker liver function. `Severe Biochemical` had the highest `Bilirubin` at **242% of typical**, but without the same drop in `Albumin` or `Platelets`, showing a different clinical pattern rather than simply a more severe version of the same group.
+>`Bilirubin` was the clearest feature separating the clusters. `Severe Biochemical` had the highest `Bilirubin` at about **236% of typical**, while `Decompensated / Advanced` showed elevated `Bilirubin` together with lower `Albumin` and `Platelets` and higher `Prothrombin`, suggesting a broader pattern of impaired liver function. `Mild / Low-Symptom` stayed closest to typical overall.
 
 ---
 ## Model
