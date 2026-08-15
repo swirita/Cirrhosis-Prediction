@@ -8,11 +8,7 @@ Liver cirrhosis is a disease where the liver becomes permanently scarred over ti
 
 This dataset follows patients with **primary biliary cirrhosis (PBC)**. Some patients remain stable, some need a liver transplant, and some die from the disease.
 
-The goal of this project is to predict whether a patient will be:
-
-- **C** – Alive / Stable
-- **CL** – Received a liver transplant
-- **D** – Died
+The goal is to predict whether a patient will be alive/stable, recieved a transplant or died.
 
 Since missing a patient who is likely to die is the most serious mistake, the models were optimized to detect **D (death)** cases instead of simply maximizing overall accuracy.
 
